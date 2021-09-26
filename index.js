@@ -13,7 +13,7 @@ function buyCake(){
 // (previousState, action) => newState
 
 const initialState = {
-    numOfCakes: 30
+    numOfCakes: 50
 }
 
 const reducer = (state = initialState, action) => {
@@ -30,7 +30,7 @@ const reducer = (state = initialState, action) => {
 const store = createStore(reducer)
 console.log('Initial State', store.getState())
 const unsubscribe = store.subscribe(() => console.log('Updated State', store.getState()))
-store.dispatch(buyCake())
-store.dispatch(buyCake())
-store.dispatch(buyCake())
-unsubscribe()
+// store.dispatch(buyCake())
+// store.dispatch(buyCake())
+// store.dispatch(buyCake())
+// unsubscribe()
